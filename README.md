@@ -1,2 +1,2 @@
-# ProyectoItegrador
+# ProyectoIntegrador
 Front End
