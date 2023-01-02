@@ -1,0 +1,21 @@
+<nav class="navbar bg-light redondeado newSize">
+    <div class="d-flex justify-content-start align-items-center">
+      <img src="../../../assets/IMG/logo.png" alt="" class="navbar-img my-auto ms-2 d-inline-block align-text-top" />
+      <div class="d-flex flex-column ms-2 align-items-center">
+        <h5 class="m-0">Argentina Programa</h5>
+        <p class="m-0">#YoProgramo</p>
+      </div>
+    </div>
+    <div class="d-flex">
+      <div class="socials d-flex align-items-center">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/mariano-j-370690228/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.behance.net/marianojavierDI" target="_blank"><i class="fa-brands fa-behance"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+      </div>
+      <button class="btn btn-sm btn-outline-secondary m-2" type="button" (click)="login()" *ngIf="!isLogged">LogIn</button>
+      <button class="btn btn-sm btn-outline-secondary m-2" type="button" (click)="onLogOut()" *ngIf="isLogged">LogOut</button>
+    </div>
+  </nav>
+
+  

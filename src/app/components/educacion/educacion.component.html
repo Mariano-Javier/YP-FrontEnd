@@ -1,0 +1,35 @@
+<h2 class="text-center m-3">Educación</h2>
+<div class="text-center">
+  <button type="button" class="btn btn-light" routerLink="/nuevaedu" *ngIf="isLogged"> <i class="bi bi-plus-circle"></i>
+    Nueva educación
+  </button>
+</div>
+<section class="m-5">
+    <ul class="timeline-with-icons">
+      <li class="timeline-item mb-5" *ngFor="let item of educacion">
+        <span class="timeline-icon d-none d-sm-flex">
+          <i class="fa-solid fa-graduation-cap text-primary fa-sm fa-fw"></i>
+        </span>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-2 mb-2 align-logo">
+              <img src={{item.urlE}} class="rounded border border-2" alt="">
+            </div>
+            <div class="col-xl-10">
+              <div class="d-flex justify-content-between flex-wrap cambio-flex">
+                <h5 class="fw-bold align-logo">{{item.nombreE}}</h5>
+                <div class="align-logo btn-margin" *ngIf="isLogged">
+                  <button class="mx-1 btn btn-light" routerLink="/editedu/{{item.id}}"><i class="bi bi-pencil"></i> Editar</button> <button class="mx-1 btn btn-light" (click)="delete(item.id)"><i class="bi bi-trash"></i>Borrar</button>
+                </div>
+              </div>
+              <p class="text-muted  fw-bold">{{item.fechaE}}</p>
+              <p class="text-muted">{{item.descripcionE}}</p>
+            </div>
+            <hr class="base-linea">
+          </div>
+        </div>
+      </li>
+     </ul>
+  </section>
+
+
