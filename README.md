@@ -1,2 +1,2 @@
-# ProyectoIntegrador
+# YoProgramo - Proyecto Integrador
 Front End
